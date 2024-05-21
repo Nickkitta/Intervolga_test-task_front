@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Form</title>
+</head>
+<body>
+    <div id="main" class="main">
+        <img src="./close.svg" alt="close" class="close">
+        <div class="form-block">
+            <h1>Транспортные средства и водители</h1>
+            <form class="form">
+                <div class="form-elem">
+                    <h2>Гос-номер</h2>
+                    <input id="gos-number" type="text" class="form-input" placeholder="Укажите го-номер">    
+                </div>
+                <div class="form-elem">
+                    <h2>Транспортное средство</h2>
+                    <input id="transport" type="text" class="form-input" placeholder="Транспортное средство">    
+                </div>
+                <div class="form-elem">
+                    <h2>Ориентировочная дата прибытия к покупателю</h2>
+                    <input id="date" type="text" class="form-input" placeholder="Дата*">    
+                </div>
+                <div class="form-elem">
+                    <h2 class="bold">Данные о водителе</h2>
+                    <h2>ФИО</h2>
+                    <input id="fio" type="text" class="form-input" placeholder="Укажите ФИО водителя">    
+                </div>
+                <div class="form-elem">
+                    <h2>Паспортные данные</h2>
+                    <div class="passport">
+                        <input id="pass-series" type="text" class="form-input-small" placeholder="Серия">
+                        <input id="pass-num" type="text" class="form-input-small" placeholder="Номер">
+                    </div>   
+                </div>
+                <div class="form-elem">
+                    <h2>Кем выдан</h2>
+                    <input id="who" type="text" class="form-input" placeholder="Кем выдан">   
+                </div>
+                <div class="form-elem">
+                    <h2>Когда выдан</h2>
+                    <input id="when" type="text" class="form-input" placeholder="Когда выдан">   
+                </div>
+            </form>
+            <div class="buttons">
+                <button id="submit-button" class="button">Отправить</button>
+                <button id="cancel-button" class="button cancel-button">Отменить</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
